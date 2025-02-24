@@ -70,7 +70,6 @@ abstract class AbstractProductOption(
     fun softDeleteOption(now: LocalDateTime) {
         attributeList.forEach { it.softDeleteBaseEntity(now = now) }
         softDeleteBaseEntity(now = now)
-//        attributeList.clear()
     }
 
     fun update(updateOption: UpdateOptionDto, now: LocalDateTime) {
